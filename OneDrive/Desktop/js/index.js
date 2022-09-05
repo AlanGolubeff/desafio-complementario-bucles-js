@@ -1,4 +1,24 @@
-for (i = 1; i <= 25; i++) {
+let total = 0
+function calculo() {
+    let producto = prompt('Ingresar Producto')
+    let valor = parseFloat(prompt('Ingresar Precio'))
+    alert(asignarProducto(producto, valor));
+    total = total + 0 + valor * 1.21;
+    console.log(asignarProducto(producto, valor));
+}
+const iva = (precio) => { return precio * 1.21 }
+const asignarProducto = (producto, precio) => "producto" + producto + "precio base" + precio + ' precio con iva ' + iva(precio);
+for (let index = 0; index < 5; index++) {
+    calculo();
+}
+alert(' Tu Total es de ' + total);
+console.log(' Tu Total es de ' + total);
+
+
+
+
+
+/* for (i = 1; i <= 25; i++) {
     let ingresarNombre = prompt("Ingresar Nombre");
     alert("Turno Nro" + i + " Nombre " + ingresarNombre);
     console.log("Turno Nro" + i + " Nombre " + ingresarNombre);
@@ -54,4 +74,5 @@ for (let array in Array2) {
     } else {
         document.write(Array2[array] + "<br>")
     }
-}
+} 
+*/
