@@ -12,19 +12,30 @@ const nombres = ["remera", "carlo", "campera", "pantalon", "zapatillas", "gorra"
 
 const categoria = ["hombre", "mujer", "nino", "nina", "calzado", "accesorios"];
 
-const alala = [];
+const productosAr = [];
 
 for (let productoS of productosId) {
-    alala.push(new Producto(productosId[productoS], nombres[Math.floor(Math.random() * 20)], Math.floor(Math.random() * 1000), categoria[Math.floor(Math.random() * 6)]));
+    productosAr.push(new Producto(productosId[productoS], nombres[Math.floor(Math.random() * 20)], Math.floor(Math.random() * 1000), categoria[Math.floor(Math.random() * 6)]));
 }
 
 function elegir() {
-    let productoelegido = prompt("ingresar producto")
-    console.log(alala[parseInt(productoelegido)])
+    let productoelegido = prompt("ingrese un número para buscar su producto")
+    console.log(productosAr[parseInt(productoelegido)])
+    let productito = productosAr[parseInt(productoelegido)]
+    console.log(productito)
+    alert(`El producto es:  ${productito.nombre}
+    El precio es: $ ${productito.precio}`)
 }
 for (let index = 0; index < 5; index++) {
     elegir();
 }
+
+
+
+
+
+
+
 
 
 
@@ -46,8 +57,9 @@ for (let index = 0; index < 5; index++) {
     calculo();
 }
 alert(' Tu Total es de ' + total);
-console.log(' Tu Total es de ' + total);
+console.log(' Tu Total es de ' + total); 
 */
+
 
 
 
