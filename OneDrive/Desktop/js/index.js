@@ -24,7 +24,7 @@ function elegir() {
     let productito = productosAr[parseInt(productoelegido)]
     console.log(productito)
     alert(`El producto es:  ${productito.nombre}
-    El precio es: $ ${productito.precio}`)
+    El precio es:  $ ${productito.precio}`)
 }
 for (let index = 0; index < 5; index++) {
     elegir();
