@@ -86,7 +86,7 @@ function init() {
 
         let store = JSON.parse(localStorage.getItem("guardados"));
         console.log(guardados)
-        guardados.log(productito)
+        guardados.push(productito)
         localStorage.setItem("guardados", JSON.stringify(guardados));
 
         let continuarALosSiguientes = document.createElement("a");
